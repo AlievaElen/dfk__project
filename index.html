@@ -5,8 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./Geometria/stylesheet.css">
 </head>
 <body>
-    
-</body>
+    <header>
+        <div class="header__logo">
+
+        </div>
+        <div class="header__menu">
+            <ul>
+                <li><a href="">О нас</a></li>
+                <li><a href="">Каталог</a></li>
+                <li><a href="">Где нас найти?</a></li>
+            </ul>
+        </div>
+        <div class="header__button">
+            <button><a href="./">Регистрация</a></button> <button><a href="./">Вход</a></button>
+        </div>
+    </header>
+    <main>
+        <div class="container__headline">
+            <div class="container__h1" >
+                <p class="p">Библиотека Аалто </p><p class="p2">Читай, узнавай, развивайся!</p>
+            </div>
+        </div>
+        <div class="main__slider">
+            <div class="slide__headline">
+                <p class="sl__h">Новинки коллекции</p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, facere commodi, animi, excepturi reiciendis in facilis doloremque enim quod quas tempora iste similique unde dolorum delectus nemo assumenda rerum inventore! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur qui libero aut tempore quae amet eveniet temporibus quisquam ipsam inventore obcaecati, explicabo voluptas quia? Ea id recusandae nisi omnis fuga.
+            </div>
+            <div class="slider">
+                <img src="./Images/shestoe_chuvstvo_gumilev_nikolay_1_lp_melodiya_sssr_1.jpg" alt="Шестое чувство" class="slide">
+                <img src="./Images/stranicy_russkoy_poezii_xviii-xx_vekov_bednyy_demyan_1_melodiya_sssr_1.jpg" alt="Страницы русской поэзии" class="slide">
+                <img src="./Images/stihi_i_pesni_rubcov_nikolay_2_lp_melodiya_sssr_2404_1.jpg" alt="Стихи и песни" class="slide">
+              </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer__logo">
+
+        </div>
+        <div class="footer__menu">
+            <ul> 
+                <li style="font-weight: 500"><a href="">Меню</a></li>
+                <li><a href="">О нас</a></li>
+                <li><a href="">Каталог</a></li>
+                <li><a href="">Где нас найти?</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+    let currentIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        const slideInterval = 3000;
+         
+        function changeSlide() {
+          slides[currentIndex].style.opacity = 0;
+          currentIndex = (currentIndex + 1) % slides.length;
+          slides[currentIndex].style.opacity = 1;
+        }
+         
+        setInterval(changeSlide, slideInterval);</script>
 </html>
