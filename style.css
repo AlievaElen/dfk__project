@@ -1,186 +1,178 @@
-
-body{
-    max-width: 1200px;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
+body {
+  max-width: auto;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
-header{
-    height: 100px;
-   background-color: #8C7678;
-   margin: 0px;
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: space-between;
-   padding-left: 2%;
-   padding-right: 2%;
+header {
+  height: 100px;
+  background-color: #8c7678;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2%;
+  padding-right: 2%;
 }
-.header__logo{
-    width:  70px;
-    height: 70px;
-    background-color: #f2f0eb;
-    transition: 1s;
-    border-radius: 10px;
+.header__logo {
+  width: 70px;
+  height: 70px;
+  background-color: #f2f0eb;
+  transition: 1s;
+  border-radius: 10px;
 }
-.header__logo:hover{
-    width:  80px;
-    height: 80px;
-    
+.header__logo:hover {
+  width: 80px;
+  height: 80px;
 }
-.header__menu a{
-    text-decoration: none; 
-    color: #f2f0eb;
-    transition: 0.7s;
-    font-size: 14pt;
-
+.header__menu a {
+  text-decoration: none;
+  color: #f2f0eb;
+  transition: 0.7s;
+  font-size: 14pt;
 }
-.header__menu a:hover{ 
-    color: #cfb6ba;
+.header__menu a:hover {
+  color: #cfb6ba;
 }
-.header__menu ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-align-items: center;
-justify-content: space-around;
-
+.header__menu ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: space-around;
 }
-.header__menu li{
-   
-    font-family: 'Geometria' ;
-    list-style: none;
-    padding-left: 10px;
+.header__menu li {
+  font-family: "Geometria";
+  list-style: none;
+  padding-left: 10px;
 }
 
-.header__button button{
-    font-family: 'Geometria' ;
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 7px 7px 7px 7px;
-    background-color: #be9694;
-    border-color: #cfb6ba;
+.header__button button {
+  font-family: "Geometria";
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 7px 7px 7px 7px;
+  background-color: #be9694;
+  border-color: #cfb6ba;
+  font-size: 16px;
 }
-.header__button a{
-    text-decoration: none;
-    color: #f2f0eb;
+.header__button a {
+  text-decoration: none;
+  color: #f2f0eb;
 }
 
 /* main */
-main{
-    padding: 0;
-    margin: 0;
+main {
+  padding: 0;
+  margin: 0;
 }
-.container__headline{
-    height: 600px;
-    background-image: url('./Images/aalto.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container__headline {
+  height: 600px;
+  background-image: url("./Images/aalto.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.container__h1{
-    width: 80%;
-    height: 30%;
-    background-color: #8c767891;
-   color: white;
-   font-family: 'Geometria' ; 
-   text-align: center;
-   font-size: 24px;
-   padding-bottom: 50px;
+.container__h1 {
+  width: 80%;
+  height: 30%;
+  background-color: #8c767891;
+  color: white;
+  font-family: "Geometria";
+  text-align: center;
+  font-size: 24px;
+  padding-bottom: 50px;
 }
-.p{
-    font-weight: 600;
-    font-size: 55px;
+.p {
+  font-weight: 600;
+  font-size: 55px;
+  text-shadow: 2px 2px 5px black;
 }
-.p2{
-    margin-top: -50px;
-
+.p2 {
+  margin-top: -50px;
+  text-shadow: 2px 2px 3px black;
 }
-.main__slider{
-    background-color: #f2f0eb;
-    height: 600px;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    padding-left: 50px;
-    padding-right: 150px;
+.main__slider {
+  background-color: #f2f0eb;
+  height: 600px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 150px;
 }
 .slider {
-    position: relative;
-    width: 100%;
-    height: 500px;
-    overflow: hidden;
-  }
-  .slide {
-    position: absolute;
-    width:500px;
-    height: 500px;
-    opacity: 0;
-    transition: opacity 2s;
-  }
-  
-  .slide:first-child {
-    opacity: 1;
-  }
-.slide__headline{
-    font-family: 'Geometria' ; 
-    width: 500px;
-    align-self: start;
-
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
 }
-.sl__h{
-    font-weight: 600;
-    font-size: 55px;
+.slide {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.slide:first-child {
+  opacity: 1;
+}
+.slide__headline {
+  font-family: "Geometria";
+  width: 500px;
+  align-self: start;
+}
+.sl__h {
+  font-weight: 600;
+  font-size: 55px;
 }
 
 /* footer  */
-footer{
-    height: 150px;
-   background-color: #8C7678;
-   margin: 0px;
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: space-between;
-   padding-left: 2%;
-   padding-right: 2%;
+footer {
+  height: 150px;
+  background-color: #000000;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2%;
+  padding-right: 2%;
 }
-.footer__logo{
-    width:  70px;
-    height: 70px;
-    background-color: #f2f0eb;
-    transition: 1s;
-    border-radius: 10px;
+.footer__logo {
+  width: 70px;
+  height: 70px;
+  background-color: #f2f0eb;
+  transition: 1s;
+  border-radius: 10px;
 }
-.footer__logo:hover{
-    width:  80px;
-    height: 80px;
-    
+.footer__logo:hover {
+  width: 80px;
+  height: 80px;
 }
-.footer__menu a{
-    text-decoration: none; 
-    color: #f2f0eb;
-    transition: 0.7s;
-    font-size: 14pt;
+.footer__menu a {
+  text-decoration: none;
+  color: #f2f0eb;
+  transition: 0.7s;
+  font-size: 14pt;
 }
-.footer__menu a:hover{ 
-    color: #cfb6ba;
+.footer__menu a:hover {
+  color: #cfb6ba;
 }
-.footer__menu ul{
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-align-items: end;
-justify-content: space-around;
-
+.footer__menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: end;
+  justify-content: space-around;
 }
-.footer__menu li{
-   
-    font-family: 'Geometria' ;
-    list-style: none;
-    padding-left: 10px;
+.footer__menu li {
+  font-family: "Geometria";
+  list-style: none;
+  padding-left: 10px;
 }
