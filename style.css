@@ -1,5 +1,5 @@
 body {
-  max-width: auto;
+  min-width: 1200px;
   margin: 0;
   padding: 0;
   display: flex;
@@ -32,9 +32,10 @@ header {
   color: #f2f0eb;
   transition: 0.7s;
   font-size: 14pt;
+  transition: 0.7s;
 }
 .header__menu a:hover {
-  color: #cfb6ba;
+  color: #000000;
 }
 .header__menu ul {
   display: flex;
@@ -52,17 +53,20 @@ header {
 .header__button button {
   font-family: "Geometria";
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 2px;
   padding: 7px 7px 7px 7px;
-  background-color: #be9694;
-  border-color: #cfb6ba;
+  background-color: #000000;
+  border: none;
   font-size: 16px;
 }
 .header__button a {
   text-decoration: none;
   color: #f2f0eb;
+  transition: 0.7s;
 }
-
+.header__button a:hover {
+  color: #8c7678;
+}
 /* main */
 main {
   padding: 0;
@@ -78,26 +82,41 @@ main {
   align-items: center;
 }
 .container__h1 {
-  width: 80%;
-  height: 30%;
-  background-color: #8c767891;
+  width: 70%;
+  height: 40%;
+  border-radius: 2px;
+  background-color: #00000091;
   color: white;
   font-family: "Geometria";
   text-align: center;
   font-size: 24px;
-  padding-bottom: 50px;
 }
 .p {
   font-weight: 600;
   font-size: 55px;
-  text-shadow: 2px 2px 5px black;
+  text-shadow: 2px 2px 3px black;
 }
 .p2 {
   margin-top: -50px;
   text-shadow: 2px 2px 3px black;
 }
-.main__slider {
+.container__videocard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #f2f0eb;
+}
+.container__videocard p {
+  font-family: "Geometria";
+  font-weight: 600;
+  font-size: 45px;
+}
+.container__videocard video {
+  max-width: 70%;
+  padding-bottom: 2%;
+}
+.main__slider {
+  background-color: #cfb6ba;
   height: 600px;
   display: flex;
   flex-direction: row-reverse;
@@ -131,7 +150,10 @@ main {
   font-weight: 600;
   font-size: 55px;
 }
-
+.s {
+  background-color: black;
+  color: #000000;
+}
 /* footer  */
 footer {
   height: 150px;
@@ -175,4 +197,10 @@ footer {
   font-family: "Geometria";
   list-style: none;
   padding-left: 10px;
+}
+
+@media (min-width: 720px) {
+  body {
+    min-width: 700px;
+  }
 }
