@@ -17,15 +17,13 @@ header {
   padding-right: 2%;
 }
 .header__logo {
-  width: 70px;
-  height: 70px;
-  background-color: #f2f0eb;
   transition: 1s;
-  border-radius: 10px;
+}
+.header__logo img{
+  width: 60px;
 }
 .header__logo:hover {
-  width: 80px;
-  height: 80px;
+  box-shadow: 2px 2px 8px black;
 }
 .header__menu a {
   text-decoration: none;
@@ -67,10 +65,34 @@ header {
 .header__button a:hover {
   color: #8c7678;
 }
+
+/* main */
+main{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding-right: 2%;
+}
+.card{ 
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.card p{
+  font-family: "Geometria";
+  font-size: 18px;
+}
+.card img{
+  width: 300px;
+}
 /* footer  */
 footer {
   height: 150px;
-  background-color: #000000;
+  background-color: #8c7678;
   margin: 0px;
   display: flex;
   flex-direction: row;
@@ -80,15 +102,13 @@ footer {
   padding-right: 2%;
 }
 .footer__logo {
-  width: 70px;
-  height: 70px;
-  background-color: #f2f0eb;
   transition: 1s;
-  border-radius: 10px;
+}
+.footer__logo img{
+width: 60px;
 }
 .footer__logo:hover {
-  width: 80px;
-  height: 80px;
+ box-shadow: 2px 2px 8px black;
 }
 .footer__menu a {
   text-decoration: none;
@@ -97,7 +117,7 @@ footer {
   font-size: 14pt;
 }
 .footer__menu a:hover {
-  color: #cfb6ba;
+  color: #000000;
 }
 .footer__menu ul {
   display: flex;
@@ -111,6 +131,7 @@ footer {
   list-style: none;
   padding-left: 10px;
 }
+
 .s {
   background-color: black;
   color: #000000;
