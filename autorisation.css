@@ -1,0 +1,155 @@
+body {
+    min-width: 1200px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    height: 100px;
+    background-color: #8c7678;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .header__logo {
+    transition: 1s;
+  }
+  .header__logo img{
+    width: 60px;
+  }
+  .header__logo:hover {
+    box-shadow: 2px 2px 8px black;
+  }
+  .header__menu a {
+    text-decoration: none;
+    color: #f2f0eb;
+    transition: 0.7s;
+    font-size: 14pt;
+    transition: 0.7s;
+  }
+  .header__menu a:hover {
+    color: #000000;
+  }
+  .header__menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .header__menu li {
+    font-family: "Geometria";
+    list-style: none;
+    padding-left: 10px;
+  }
+  
+  .header__button button {
+    font-family: "Geometria";
+    background-color: #fff;
+    border-radius: 2px;
+    padding: 7px 7px 7px 7px;
+    background-color: #000000;
+    border: none;
+    font-size: 16px;
+  }
+  .header__button a {
+    text-decoration: none;
+    color: #f2f0eb;
+    transition: 0.7s;
+  }
+  .header__button a:hover {
+    color: #8c7678;
+  }
+
+/* main */
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Geometria";
+    gap: 20px;
+}
+input{
+    width: 30%;
+    height: 40px;
+    font-size: 18px;
+    padding-left: 2%;
+}
+::placeholder{
+    font-family: "Geometria";
+    font-size: 18px;
+}
+main div{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+#ch {
+    width: 20px;
+    height: 20px;
+}
+#submit{
+    background-color: #8c7678;
+    width: 15%;
+    border: none;
+    margin-bottom: 2%;
+    font-family: "Geometria";
+    
+}
+/* footer  */
+footer {
+    height: 150px;
+    background-color: #8c7678;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .footer__logo {
+    transition: 1s;
+  }
+  .footer__logo img{
+  width: 60px;
+  }
+  .footer__logo:hover {
+   box-shadow: 2px 2px 8px black;
+  }
+  .footer__menu a {
+    text-decoration: none;
+    color: #f2f0eb;
+    transition: 0.7s;
+    font-size: 14pt;
+  }
+  .footer__menu a:hover {
+    color: #000000;
+  }
+  .footer__menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: end;
+    justify-content: space-around;
+  }
+  .footer__menu li {
+    font-family: "Geometria";
+    list-style: none;
+    padding-left: 10px;
+  }
+  
+  .s {
+    background-color: black;
+    color: #000000;
+  }
