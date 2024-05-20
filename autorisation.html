@@ -28,9 +28,9 @@
         
         <form action="">
             <h1>Регистрация</h1>
-            <input type="text" placeholder="Введите имя">
-        <input type="text" placeholder="Введите фамилию">
-        <input type="text" placeholder="Введите отчество">
+            <input type="text" placeholder="Введите имя" pattern="[А-Я, а-я]">
+        <input type="text" placeholder="Введите фамилию"  pattern="[А-Я, а-я]">
+        <input type="text" placeholder="Введите отчество"  pattern="[А-Я, а-я]">
         <input type="email" placeholder="Введите адрес электронной посты">
         <input id="password" class="otsputFIO" type="password" maxlength="20" required placeholder="Введите пароль">
         <input id="password-repeat" class="otsputFIO" type="password" maxlength="20" required placeholder="Повторите пароль">
@@ -53,5 +53,6 @@
             </ul>
         </div>
     </footer>
+    
 </body>
 </html>

@@ -85,9 +85,17 @@ main{
 .card p{
   font-family: "Geometria";
   font-size: 18px;
+  transition: 1s;
 }
 .card img{
   width: 300px;
+  transition: 1s;
+}
+.card :hover{
+  color: #8c7678;
+}
+.card img:hover{
+  width: 320px;
 }
 /* footer  */
 footer {
