@@ -65,7 +65,38 @@ body {
   .header__button a:hover {
     color: #8c7678;
   }
-  
+
+/* main */
+.container__headline {
+  height: 600px;
+  background-image: url("./Images/aalto.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container__h1 {
+  width: 70%;
+  height: 70%;
+  border-radius: 2px;
+  background-color: #00000091;
+  color: white;
+  font-family: "Geometria";
+  text-align: left;
+  padding-left: 2%;
+  padding-bottom: 2%;
+  font-size: 24px;
+}
+.map{
+  display: flex;
+  font-family: "Geometria";
+  align-items: center;
+  justify-content: center;
+flex-direction: column;
+  border-color: #f2f0eb;
+  margin-bottom: 2%;
+}
 /* footer  */
 footer {
     height: 150px;
